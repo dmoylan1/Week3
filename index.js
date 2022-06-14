@@ -30,38 +30,54 @@
 // *** Intermediate Array Methods ***
 // *** Maps *** 
 
-let names = ['Danielle', 'Dan', 'Chloe', 'Jacob'];
-let lengths = names.map(function(element) {
-    return element.length;
-});
+// let names = ['Danielle', 'Dan', 'Chloe', 'Jacob'];
+// let lengths = names.map(function(element) {
+//     return element.length;
+// });
 
-console.log(lengths);
+// console.log(lengths);
 
-console.log('break');
-let veggies = ['cucumber', 'carrot', 'tomato', 'bean', 'pea', 'corn'];
-let charactercount = veggies.map(function(x) {
-    return x.length;
-});
+// console.log('break');
+// let veggies = ['cucumber', 'carrot', 'tomato', 'bean', 'pea', 'corn'];
+// let charactercount = veggies.map(function(x) {
+//     return x.length;
+// });
 
-console.log(charactercount);
+// console.log(charactercount);
 
-// *** Reduce ***
+// // *** Reduce ***
 
-let sum = charactercount.reduce(function(accumulator, currentValue) {
-    return accumulator + currentValue;
-}, 10); // starts counting at 10
+// let sum = charactercount.reduce(function(accumulator, currentValue) {
+//     return accumulator + currentValue;
+// }, 10); // starts counting at 10
 
-console.log(sum);
+// console.log(sum);
 
-// *** For each ***
+// // *** For each ***
 
-names.forEach(function(element) {
-    console.log(element);
-});
+// names.forEach(function(element) {
+//     console.log(element);
+// });
 
-// *** Filter ***
+// // *** Filter ***
 
-let evens = names.filter(function(element) {
-    return element.length % 2 == 0;
-});
-console.log(evens);
+// let evens = names.filter(function(element) {
+//     return element.length % 2 == 0;
+// });
+// console.log(evens);
+
+// **OBJECTS ***
+
+var dvdPlayer = {
+    height: 3,
+    width: 18,
+    depth: 12,
+    weight: 7,
+    color: "black",
+    dvdName: "Encanto",
+    printDvdName: function() {
+        console.log(this.dvdName);
+    }
+};
+console.log(dvdPlayer.height);
+dvdPlayer.printDvdName();
