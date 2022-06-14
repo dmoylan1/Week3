@@ -36,3 +36,32 @@ let lengths = names.map(function(element) {
 });
 
 console.log(lengths);
+
+console.log('break');
+let veggies = ['cucumber', 'carrot', 'tomato', 'bean', 'pea', 'corn'];
+let charactercount = veggies.map(function(x) {
+    return x.length;
+});
+
+console.log(charactercount);
+
+// *** Reduce ***
+
+let sum = charactercount.reduce(function(accumulator, currentValue) {
+    return accumulator + currentValue;
+}, 10); // starts counting at 10
+
+console.log(sum);
+
+// *** For each ***
+
+names.forEach(function(element) {
+    console.log(element);
+});
+
+// *** Filter ***
+
+let evens = names.filter(function(element) {
+    return element.length % 2 == 0;
+});
+console.log(evens);
